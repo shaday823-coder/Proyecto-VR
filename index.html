@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 
 <html lang="es">
@@ -120,7 +117,7 @@
         if (input.value.trim() === "") { 
 
             alert("IDENTIFICACIÓN REQUERIDA"); 
-  
+
             return; 
 
         }
@@ -519,19 +516,19 @@
 
      <a-assets>
 
-    <img id="textura-cielo" src="img/1_dgJ8el2wNtlICSCJwF4dbQ.jpg">
+    <img id="textura-cielo" src="IMG/1.webp">
 
-    <img id="textura-lava" src="img/anime-streaming-plataformas.jpg">
-
-    
+    <img id="textura-lava" src="IMG/descarga (1).jpg">
 
     
+
+
 
 </a-assets>
 
 <a-plane id="lava" static-body position="0 -6 0" rotation="-90 0 0" width="2000" height="2000" 
 
-         material="src: #textura-lava; repeat: 20 20; transparent: true; emissive: #ff4500;color: #27C2F5; emissiveIntensity: 0.5"
+         material="src: #textura-lava; repeat: 20 20; transparent: true; emissive: #ff4500;color: #222222; emissiveIntensity: 0.5"
 
          animation="property: material.offset; from: 0 0; to: 1 1; dur: 30000; loop: true; easing: linear">
 
@@ -559,42 +556,35 @@
 
 <a-sound id="audio-fondo" src="#musica-fondo" loop="true" volume="0.020"></a-sound>
 
-
-*/nivel*/
-
         <a-box class="suelo" static-body position="0 0 0" width="8" height="0.3" depth="8" color="#222"></a-box>
 
-        <a-box class="suelo" static-body  position="-0.66655 1.977 -16.71527" position="-0.66655 1.977 -16.71527" width="5" height="0.4" depth="5" color="#333"></a-box>
+        <a-box class="suelo" static-body position="0 4 -12" width="5" height="0.4" depth="5" color="#333"></a-box>
 
-        <a-box class="suelo" static-body position="0.038 1.977 -9.13067" position="0.038 1.977 -9.13067" width="5" height="0.4" depth="5" color="#333"></a-box>
+        <a-box class="suelo" static-body position="-9 7 -18" width="5" height="0.4" depth="5" color="#333"></a-box>
 
-        <a-box class="suelo" static-body position="-0.65667 4.86764 -29.91192" position="-0.65667 4.86764 -29.91192" width="6" height="0.3" depth="15" color="#444" ></a-box>
-
+        <a-box class="suelo" static-body position="0 10 -28" width="6" height="0.3" depth="15" color="#444"></a-box>
 
        
 
         <a-text value="IZQ: AGILIDAD | DER: PRECISION" position="0 16 -38" align="center" color="#00ffcc" scale="3 3 3"></a-text>
 
-         <a-box class="suelo" static-body position="-0.76238 8.599 -38.94235" position="-0.76238 8.599 -38.94235" width="4" height="0.3" depth="4" color="#222" ></a-box>
+         <a-box class="suelo" static-body position="0 10 -40" width="4" height="0.3" depth="4" color="#222"></a-box>
 
-        <a-box class="suelo" static-body position="-0.60869 10.29945 -45" position="-0.60869 10.29945 -45" width="4" height="0.4" depth="4" color="#4b0082" ></a-box>
+        <a-box class="suelo" static-body position="-12 14 -45" width="4" height="0.4" depth="4" color="#4b0082"></a-box>
 
-        <a-box class="suelo" static-body position="-1.03908 13.00805 -49.68738" position="-1.03908 13.00805 -49.68738" width="3" height="0.4" depth="3" color="#4b0082" ></a-box>
+        <a-box class="suelo" static-body position="-20 17 -52" width="3" height="0.4" depth="3" color="#4b0082"></a-box>
 
-       <a-box class="suelo" static-body position="-0.87257 14.9237 -54.88907" position="-0.87257 14.9237 -54.88907" width="3" height="0.4" depth="3" color="#4b0082"></a-box>
+        <a-box class="suelo" static-body position="-12 20 -60" width="3" height="0.4" depth="3" color="#4b0082"></a-box>
 
         
 
-        <a-box class="suelo" static-body position="-0.87381 17.66941 -59.73595" position="-0.87381 17.66941 -59.73595" width="4" height="0.4" depth="4" color="#00008b"></a-box>
+        <a-box class="suelo" static-body position="12 14 -45" width="4" height="0.4" depth="4" color="#00008b"></a-box>
 
         <a-box class="suelo" static-body position="20 17 -52" width="2" height="3" depth="2" color="#00008b"></a-box>
 
-        <a-box class="suelo" static-body position="-0.87461 20.13697 -64.63908" position="-0.87461 20.13697 -64.63908" width="3" height="0.4"></a-box>
+        <a-box class="suelo" static-body position="12 20 -60" width="3" height="0.4" depth="3" color="#00008b"></a-box>
 
         <a-box class="suelo" static-body position="0 23 -72" width="10" height="0.3" depth="10" color="#666"></a-box>
-
-/*nivel*/
-
 
         
 
@@ -608,7 +598,7 @@
 
         </a-entity>
 
-        <a-entity id="jugador" position="-0.08671 2.46866 -0.35505" motor-gameplay dynamic-body="mass: 2; fixedRotation: true">
+    <a-entity id="jugador" position="-0.08671 2.46866 -0.35505" motor-gameplay dynamic-body="mass: 2; fixedRotation: true">
 
        
     <a-box position="0.0215 1.12032 0.13408" width="0.55" height="0.5" depth="0.5" color="#cfd8dc" metalness="0.8" roughness="0.2" material="" geometry="">
@@ -698,8 +688,102 @@
 
     </a-scene>
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
+<a-scene physics="debug: false" nivel-vacio-glitch>
+
+
+
+
+
+
+
+
+
+<script>
+
+
+    AFRAME.registerComponent('nivel-vacio-glitch', {
+    init: function () {
+        const escena = document.querySelector('a-scene');
+        
+        // 1. EL PÉNDULO DE LA MUERTE (Obstáculo gigante)
+        let pendulo = document.createElement('a-box');
+        pendulo.setAttribute('width', '1');
+        pendulo.setAttribute('height', '15');
+        pendulo.setAttribute('depth', '1');
+        pendulo.setAttribute('color', '#ff00ff');
+        pendulo.setAttribute('position', '0 8 -30');
+        pendulo.setAttribute('static-body', '');
+        pendulo.id = 'lava'; // Si lo tocas, mueres
+        pendulo.setAttribute('animation', {
+            property: 'rotation',
+            to: '0 0 90',
+            from: '0 0 -90',
+            dur: 2000,
+            dir: 'alternate',
+            loop: true,
+            easing: 'easeInOutQuad'
+        });
+        escena.appendChild(pendulo);
+
+        // 2. GENERADOR DE MINAS GIRATORIAS
+        for (let i = 0; i < 6; i++) {
+            let contenedor = document.createElement('a-entity'); // Eje de rotación
+            contenedor.setAttribute('position', `0 ${4 + i} ${-45 - (i * 10)}`);
+            
+            let mina = document.createElement('a-sphere');
+            mina.setAttribute('radius', '0.8');
+            mina.setAttribute('color', '#ffaa00');
+            mina.setAttribute('material', 'emissive: #ff5500; emissiveIntensity: 3');
+            mina.setAttribute('position', '5 0 0'); // Desplazada del centro
+            mina.setAttribute('static-body', '');
+            mina.id = 'lava';
+            
+            // Animación para que la mina orbite el camino del jugador
+            contenedor.setAttribute('animation', {
+                property: 'rotation',
+                to: `0 0 ${i % 2 === 0 ? 360 : -360}`,
+                dur: 3000,
+                loop: true,
+                easing: 'linear'
+            });
+            
+            contenedor.appendChild(mina);
+            escena.appendChild(contenedor);
+        }
+
+        // 3. PLATAFORMAS DE SALTO PRECISAS
+        for (let j = 0; j < 8; j++) {
+            let p = document.createElement('a-cylinder');
+            p.setAttribute('radius', '1.5');
+            p.setAttribute('height', '0.2');
+            p.setAttribute('color', '#00ffcc');
+            p.setAttribute('static-body', '');
+            p.classList.add('suelo'); // Da puntos al tocarla
+            
+            // Zigzag vertical y horizontal
+            let x = Math.sin(j) * 5;
+            let y = 1 + (j * 3);
+            let z = -20 - (j * 12);
+            p.setAttribute('position', {x: x, y: y, z: z});
+            
+            escena.appendChild(p);
+        }
+    }
+}); 
+</script>
 </body>
 
 </html>
-index.html
-Mostrando index.html
